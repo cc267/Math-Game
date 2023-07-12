@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Subtracting Math Quiz</title>
+  <style>
+   body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: linear-gradient(to bottom right, #FF6B6B, #F5D547);
+  color: #FFFFFF;
+}
+
+h1 {
+  text-align: center;
+  color: #4169E1;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  color: #000000;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #000000;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  border: none;
+  color: #FFFFFF;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.result {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #4169E1;
+};
+  </style>
+</head>
+<body>
+  <h1>Subtracting Math Quiz</h1>
+
+  <form id="quizForm" onsubmit="checkAnswers(event)">
+    <div id="questionsContainer"></div>
+    <input type="submit" value="Submit" />
+  </form>
+
+  <div id="resultContainer" class="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
