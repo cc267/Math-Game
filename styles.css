@@ -1,0 +1,94 @@
+ body {
+            background: linear-gradient(to bottom, #1d2b53, #000000);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+		
+ h1 {
+			margin: 0;
+			text-align: center;
+			color: #ff00b3;
+			position: relative;
+			animation: sparkles 2s infinite;
+	}
+
+ @keyframes sparkles {
+			0% {
+			color: #ff00b3;
+			text-shadow: none;
+			}
+			50% {
+			color: #ff00b3;
+			text-shadow: 0 0 5px rgba(255, 0, 179, 0.8),
+                 0 0 10px rgba(255, 0, 179, 0.8),
+                 0 0 20px rgba(255, 0, 179, 0.8),
+                 0 0 30px rgba(255, 0, 179, 0.8),
+                 0 0 40px rgba(255, 0, 179, 0.8);
+				}
+			100% {
+			color: #ff00b3;
+			text-shadow: none;
+				}
+	}
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 20px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: auto;
+        }
+
+        .close {
+            color: #ffffff;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbbbbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
